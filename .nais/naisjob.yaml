@@ -20,7 +20,7 @@ spec:
     - name: SLACK_CHANNEL
       value: "#researchops-alerts"
     - name: NOTIFY_OK_SCAN_STATUS
-      value: "true"
+      value: "false"
   schedule: '45 9 * * *'
   failedJobsHistoryLimit: 1
   successfulJobsHistoryLimit: 1
