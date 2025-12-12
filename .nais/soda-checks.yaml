@@ -13,5 +13,3 @@ data:
     checks for public_website:
       - duplicate_count(website_id) = 0:
           name: "Sjekker om website_id innholder duplikater (ikke krise)"
-      - duplicate_count(website_id) > 0:
-          name: "Bør slå ut. Brukes for testing."
