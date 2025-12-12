@@ -7,9 +7,9 @@ data:
   umami.yaml: |
     checks for public_website_event:
       - freshness(created_at) > 2h:
-          name: "Sjekker om det har kommet data siste to timer"
+          name: "Det har gått over 2 timer siden tabellen ble oppdatert. Det betyr sannsynligvis at en komponent i umamiriggen er nede."
     
     
     checks for public_website:
       - duplicate_count(website_id) = 0:
-          name: "Sjekker om website_id innholder duplikater (ikke krise)"
+          name: "Duplikater i public_website. Dette er ikke en kritisk feil med tanke på datainnsamling, men kan føre til feil i dashboards."
