@@ -21,7 +21,7 @@ spec:
       value: "#researchops-alerts"
     - name: NOTIFY_OK_SCAN_STATUS
       value: "true"
-  schedule: '09 45 * * *'
+  schedule: '45 9 * * *'
   failedJobsHistoryLimit: 1
   successfulJobsHistoryLimit: 1
   backoffLimit: 1
