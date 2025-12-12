@@ -6,7 +6,7 @@ metadata:
   name: reops-soda-checks
   namespace: team-researchops
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/nada/nada-soda:2025.06.03-10.46-b16fa04
+  image: europe-north1-docker.pkg.dev/nais-management-233d/nada/nada-soda:2025.09.09-10.18-fe35f37
   accessPolicy:
     outbound:
       rules:
