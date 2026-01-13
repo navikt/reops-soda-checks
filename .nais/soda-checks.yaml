@@ -6,7 +6,7 @@ metadata:
 data:
   umami.yaml: |
     filter public_website_event [daily]:
-      where: created_at > TIMESTAMP_ADD('${NOW}', INTERVAL 1 DAY)
+      where: created_at > TIMESTAMP_ADD('${NOW}', INTERVAL -1 DAY)
 
     checks for public_website_event [daily]:
       - freshness(created_at) < 2h:
